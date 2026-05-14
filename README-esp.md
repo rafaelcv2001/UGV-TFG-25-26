@@ -49,7 +49,7 @@ El chasis y los soportes de sensores están modelados en **FreeCAD** (PartDesign
 
 | | |
 |---|---|
-| ![Vista general](C:\Users\kolap\OneDrive\Documentos\GitHub\UGV-TFG-25-26\docs\img) | ![Explosionado](docs/img/render_explosionado.png) |
+| ![Vista general](docs/img/render_general.png) | ![Explosionado](docs/img/render_explosionado.png) |
 | Vista general del UGV | Explosionado de componentes |
 
 | | |
