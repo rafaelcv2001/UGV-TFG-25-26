@@ -78,13 +78,13 @@ El chasis y los soportes de sensores están modelados en **FreeCAD** (PartDesign
 ## Lógica de software
 
 - **Modo manual:** controlado con el mando DualShock 4.
-- **Modo autónomo:** activado con el botón Square.
-- **Aceleración / frenado:** L2 y R2.
+- **Modo autónomo:** activado manteniendo pulsado  el botón "Cuadrado".
+- **Aceleración / frenado:** Gatillos L2 y R2.
 - **Dirección:** joystick izquierdo.
-- **Bloqueo manual:** botón X.
-- **Frenado de emergencia:** sensores ToF y ultrasónicos.
-- **Detección de dianas:** sistema de visión con YOLO.
-- **Comportamiento en esquinas:** giro de 360° para detección y reorientación.
+- **Bloqueo manual:** botón "X".
+- **Frenado de emergencia:** sensores ultrasónicos.
+- **Detección de señales:** sistema de visión con YOLO.
+- **Comportamiento con señales:** detección y toma de decisiones (parada, avance, reorientación 90º izquierda/derecha) según lo observado.
 
 
 **Stack de software del proyecto**: 
