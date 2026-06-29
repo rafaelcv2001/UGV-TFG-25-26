@@ -1,5 +1,5 @@
 # UGV_TFG_25-26
-Indoor UGV prototype based on Raspberry Pi 5. Features skid-steering, ToF-based obstacle avoidance, and YOLO-powered object detection. Supports manual (DualShock 4) and autonomous operation. UCA Graduation Project 2026.
+Indoor UGV prototype based on Raspberry Pi 5. Features skid-steering, Ultrasonic Sensor-based obstacle avoidance, and YOLO-powered object detection. Supports manual (DualShock 4) and autonomous operation. UCA Graduation Project 2026.
 # UGV Indoor – TFG Ingeniería Mecánica (en desarrollo)
 
 > Vehículo terrestre no tripulado (UGV) para navegación en entorno interior controlado.  
@@ -10,7 +10,7 @@ Indoor UGV prototype based on Raspberry Pi 5. Features skid-steering, ToF-based 
 ## ¿Qué es este proyecto?
 
 Diseño e integración de un UGV de bajo coste para entornos interiores, capaz de operar en modo
-manual (DualShock 4) y modo semiautónomo (seguimiento de perímetro con detección de obstáculos).
+manual (DualShock 4) y modo autónomo (toma de decisiones según señales de tráfico observadas).
 
 El proyecto cubre el ciclo completo: diseño mecánico en CAD → selección de componentes →
 arquitectura electrónica → desarrollo de software de control.
@@ -21,7 +21,7 @@ arquitectura electrónica → desarrollo de software de control.
 
 | Fase | Estado |
 |------|--------|
-| Diseño CAD (chasis y soportes) | ✅ Completado |
+| Diseño CAD | ✅ Completado |
 | Arquitectura electrónica definida | ✅ Completado |
 | Planos de fabricación | ✅ Completado |
 | Scripts de control (Python) | 🔄 En desarrollo |
@@ -45,7 +45,7 @@ arquitectura electrónica → desarrollo de software de control.
 
 ## Diseño mecánico
 
-El chasis y los soportes de sensores están modelados en **FreeCAD** (PartDesign // Assembly4).
+El chasis y los soportes de sensores están modelados en **FreeCAD** (PartDesign // Assembly4) y los planos realizados en AutoCAD con licencia de estudiante.
 
 | | |
 |---|---|
@@ -66,11 +66,11 @@ El chasis y los soportes de sensores están modelados en **FreeCAD** (PartDesign
 | Componente | Modelo | Función |
 |---|---|---|
 | Ordenador de a bordo | Raspberry Pi 5 (8 GB) | Control central |
-| HAT de motores | Adafruit DC & Stepper Motor Bonnet | Control 4× TT motor |
+| HAT de motores | Adafruit DC & Stepper Motor Bonnet | Control 4× DC Motor Tipo TT |
 | Motores | TT Motor 1:48 | Tracción skid-steering |
-| Sensor frontal | VL53L0X ToF | Frenado de emergencia |
-| Sensores laterales | HC-SR04 (×2) | Detección de obstáculos |
-| Cámara | USB frontal | Visión artificial YOLO |
+| Sensor frontal (90º) | HC-SR04 | Detección de obstáculos - Frenado de emergencia |
+| Sensores diagonales (45º y 135º) | HC-SR04 (×2) | Detección de obstáculos - Frenado de emergencia |
+| Cámara | RPi Camera| Visión artificial YOLO |
 | Mando | DualShock 4 | Control manual / cambio de modo |
 
 ---
@@ -98,10 +98,10 @@ El chasis y los soportes de sensores están modelados en **FreeCAD** (PartDesign
 
 ## Decisiones de diseño y limitaciones documentadas
 
-- **Ultrasonidos en ángulo diagonal**: el montaje a 58°/122° genera reflexiones especulares que
+- **Ultrasonidos en ángulo diagonal**: el montaje a 45°/135° genera reflexiones especulares que
   devuelven distancias mayores que las reales. Documentado en la memoria del TFG.
   Solución adoptada: los ultrasonidos actúan como alarma de obstáculo, no como referencia métrica
-  para wall-following. El frenado de emergencia se basa en el ToF frontal.
+  para _wall-following_. El frenado de emergencia se basa en el ToF frontal.
 
 - **Entorno controlado**: el sistema está diseñado para interiores con iluminación constante y
   superficies planas. No se contempla operación exterior en esta fase.
