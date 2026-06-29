@@ -110,7 +110,7 @@ El chasis y los soportes de sensores están modelados en **FreeCAD** (PartDesign
 
 ## Documentación del TFG
 
-📄 [Ver memoria completa (PDF)](docs/TFG_memoria.pdf) ← *(disponible tras entrega, junio 2026)*
+📄 [Ver memoria completa (PDF)](docs/TFG_memoria.pdf) ← *(disponible tras entrega, septiembre 2026)*
 
 ---
 
