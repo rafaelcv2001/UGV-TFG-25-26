@@ -36,7 +36,7 @@ arquitectura electrónica → desarrollo de software de control.
 - **Control:** Raspberry Pi 5  
 - **Input Manual:** DualShock 4 via Bluetooth  
 - **Unidad Motriz:** Adafruit DC & Stepper Motor HAT + 4× TT motors  
-- **Sensores de distancia:** VL53L0X ToF + Sensores Ultrasonido (HC-SR04) 
+- **Sensores de distancia:** Sensores Ultrasonido (HC-SR04) 
 - **Vision:** Cámara frontal + YOLO26
 - **Funciones Principales:** conducción manual, modo autónomo, frenado de emergencia
 
@@ -110,7 +110,7 @@ El chasis y los soportes de sensores están modelados en **FreeCAD** (PartDesign
 
 ## Documentación del TFG
 
-📄 [Ver memoria completa (PDF)](docs/TFG_memoria.pdf) ← *(disponible tras entrega, junio 2026)*
+📄 [Ver memoria completa (PDF)](docs/TFG_memoria.pdf) ← *(disponible tras entrega, septiembre 2026)*
 
 ---
 
