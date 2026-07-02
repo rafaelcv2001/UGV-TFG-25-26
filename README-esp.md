@@ -55,7 +55,7 @@ El chasis y los soportes de sensores están modelados en **FreeCAD** (PartDesign
 | | |
 |---|---|
 | ![Soporte sensores](docs/img/detalle_sensores.png) | ![Plano chasis](docs/img/plano_chasis.png) |
-| Detalle soportes HC-SR04 | Plano del chasis (FreeCAD TechDraw) |
+| Detalle soportes HC-SR04 | Plano del chasis (AutoCAD) |
 
 > Archivos `.FCStd` y planos en PDF disponibles bajo petición (TFG en entrega activa).
 
