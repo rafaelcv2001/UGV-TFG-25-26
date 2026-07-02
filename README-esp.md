@@ -36,7 +36,7 @@ arquitectura electrónica → desarrollo de software de control.
 - **Control:** Raspberry Pi 5  
 - **Input Manual:** DualShock 4 via Bluetooth  
 - **Unidad Motriz:** Adafruit DC & Stepper Motor HAT + 4× TT motors  
-- **Sensores de distancia:** VL53L0X ToF + Sensores Ultrasonido (HC-SR04) 
+- **Sensores de distancia:** Sensores Ultrasonido (HC-SR04) 
 - **Vision:** Cámara frontal + YOLO26
 - **Funciones Principales:** conducción manual, modo autónomo, frenado de emergencia
 
